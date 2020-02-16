@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer')
 class CurrencyExchangeController extends BaseController {
   async getDollarCurrency(req, res) {
 
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });;
     const page = await browser.newPage();
     const currencySelector = '#knowledge-currency__updatable-data-column > div.b1hJbf > div.dDoNo.vk_bk.gsrt > span.DFlfde.SwHCTb';
     
