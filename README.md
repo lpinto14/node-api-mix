@@ -1,6 +1,7 @@
 # API Mix!
 
-> git clone 
+> git clone git@github.com:lpinto14/node-api-mix.git
+
 > npm i
 
 ## Folder structure
