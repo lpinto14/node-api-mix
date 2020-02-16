@@ -10,9 +10,9 @@ class CurrencyExchangeController extends BaseController {
     const currencySelector = '#knowledge-currency__updatable-data-column > div.b1hJbf > div.dDoNo.vk_bk.gsrt > span.DFlfde.SwHCTb';
     
     //TODO: Modularize in order to avoid boilerplate code.
-    await page.goto('https://www.google.com');
+    await page.goto('https://www.google.com.ar');
     await page.focus('#tsf > div:nth-child(2) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input');
-    await page.keyboard.type('dolar hoy');
+    await page.keyboard.type('dolar a peso argentino');
     await page.click('#tsf > div:nth-child(2) > div.A8SBwf > div.FPdoLc.tfB0Bf > center > input.gNO89b')
     await page.waitForSelector(currencySelector);
     
